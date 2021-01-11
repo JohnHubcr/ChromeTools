@@ -6,7 +6,7 @@ Tools to abuse chrome
 
   Log all data sent by chrome to disk, allowing you to extract cookies and credentials with the `hunt.py` tool or manual review.
 
-- BackdoorChrome
+- ChromeBackdoor
 
   Turn chrome into a backdoor forcing it to execute any code between `<shellcode></shellcode>` tags. Using this along side a persistence method will allow you to retain access to a machine without having a beacon. All the user has to do is click a link, open an email or view an 'image' containing these tags and your shellcode.
   
