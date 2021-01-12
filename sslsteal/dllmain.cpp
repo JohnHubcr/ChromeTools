@@ -35,14 +35,7 @@ int DoOriginalSSLWrite(void* ssl, const void* buf, int num)
 }
 
 int SSL_write(void* ssl, void* buf, int num) {
-	// char* buffer = (char*)HeapAlloc(GetProcessHeap(), NULL, num);
-
-	// sprintf(buffer, "%s", (unsigned char*)buf);
-
 	MessageBoxA(NULL, (char*)buf, "SSL_write", 0);
-	// memset(buffer, '\0', strlen(buffer));
-
-	//MessageBoxA(NULL, buffer, "hook", 0);
 
 	return DoOriginalSSLWrite(ssl, buf, num);
 }
